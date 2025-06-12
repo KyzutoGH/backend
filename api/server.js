@@ -6,14 +6,14 @@ const fs = require('fs');
 require('dotenv').config();
 
 // Import routes
-const authRoutes = require('./routes/authRoutes');
-const studentRoutes = require('./routes/studentRoutes');
-const predictionRoutes = require('./routes/predictionRoutes');
-const dashboardRoutes = require('./routes/dashboardRoutes');
+const authRoutes = require('../routes/authRoutes');
+const studentRoutes = require('../routes/studentRoutes');
+const predictionRoutes = require('../routes/predictionRoutes');
+const dashboardRoutes = require('../routes/dashboardRoutes');
 
 // Import database configuration
-const { sequelize, testDbConnection } = require('./config/database');
-const errorHandler = require('./utils/errorHandler');
+const { sequelize, testDbConnection } = require('../config/database');
+const errorHandler = require('../utils/errorHandler');
 
 // Create Express app
 const app = express();
